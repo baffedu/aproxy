@@ -7,7 +7,8 @@ ADD ./run.sh /
 RUN chmod 777 /run.sh
 
 # 环境变量
-ENV TYPE="lavarel"
+ENV TYPE="laravel"
+ENV FPM_HOST="fpm_host"
 
 VOLUME /var/www/html
 WORKDIR /var/www/html
