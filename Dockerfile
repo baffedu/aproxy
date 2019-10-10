@@ -12,5 +12,4 @@ ENV FPM_HOST="fpm_host"
 
 VOLUME /var/www/html
 WORKDIR /var/www/html
-
-CMD ["/run.sh"]
+RUN sh /run.sh
