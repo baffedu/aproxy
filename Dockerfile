@@ -1,7 +1,6 @@
 FROM nginx:1.16-alpine
 
 ADD conf.d/ /etc/nginx/conf.d/
-COPY nginx.conf dest/etc/nginx/nginx.conf
 
 ADD ./run.sh /
 RUN chmod 777 /run.sh
@@ -13,3 +12,5 @@ ENV FPM_HOST="fpm-host"
 VOLUME /var/www/html
 WORKDIR /var/www/html
 RUN sh /run.sh
+
+EXPOSE 80
