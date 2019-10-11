@@ -11,6 +11,6 @@ ENV FPM_HOST="fpm-host"
 
 VOLUME /var/www/html
 WORKDIR /var/www/html
-RUN sh /run.sh
-
+# RUN sh /run.sh
+ENTRYPOINT [ "sh","/run.sh" ]
 EXPOSE 80

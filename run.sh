@@ -9,3 +9,5 @@ then
 else 
 	rm /etc/nginx/conf.d/laravel.conf
 fi
+
+nginx -g 'daemon off;'
