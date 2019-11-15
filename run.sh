@@ -15,5 +15,6 @@ else
 	rm /etc/nginx/conf.d/laravel.conf
 	rm /etc/nginx/conf.d/generalphp.conf
 fi
+fi
 
 nginx -g 'daemon off;'
